@@ -5,6 +5,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
+from sklearn.linear_model import LinearRegression
 data = r'data\insurance.csv'
 
 def training_model():
@@ -38,7 +39,6 @@ def training_model():
         x_test=scaler.transform(x_test)
 
         #Model training
-        from sklearn.linear_model import LinearRegression
         #Creating model
         model=LinearRegression()
         model.fit(x_train,y_train)
