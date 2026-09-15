@@ -15,8 +15,8 @@ class App:
         st.write('Enter the details below to predict insurance charges')
         #user input
         age=st.text_input('Age',placeholder="Enter your age")
-        weight=st.number_input('Weight(kg)',min_value=1)
-        height=st.number_input("Height (cm)",min_value=50)
+        weight=st.number_input('Weight(kg)',min_value=0.0)
+        height=st.number_input("Height (cm)",min_value=0)
         
         children=st.number_input('Children',min_value=0,max_value=10)
         sex=st.selectbox('Sex',['Select','Female','Male'])
