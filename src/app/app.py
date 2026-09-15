@@ -16,7 +16,7 @@ class App:
         #user input
         age=st.text_input('Age',placeholder="Enter your age")
         weight=st.number_input('Weight(kg)',min_value=0.0,value=None)
-        height=st.number_input("Height (cm)",min_value=0,value=None)
+        height=st.number_input("Height (cm)",min_value=0.0,value=None)
         
         children=st.number_input('Children',min_value=0,max_value=10)
         sex=st.selectbox('Sex',['Select','Female','Male'])
